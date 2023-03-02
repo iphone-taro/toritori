@@ -1,0 +1,39 @@
+.choiceAnime {
+    animation-name: choiceAnime;
+    animation-duration:0.3s;
+    animation-fill-mode:forwards;
+
+}
+
+@keyframes choiceAnime{
+0% {
+    transform: scale(1);
+  }
+90% {
+    transform: scale(1.08);
+  }
+100% {
+    transform: scale(1.02);
+  }
+}
+
+.resultScore {
+  animation-name: resultScore;
+  animation-duration:0.5s;
+  animation-fill-mode:forwards;
+
+}
+
+@keyframes resultScore{
+0% {
+  transform: scale(1);
+}
+
+80% {
+  transform: scale(1.2);
+}
+
+100% {
+  transform: scale(1.1);
+}
+}
