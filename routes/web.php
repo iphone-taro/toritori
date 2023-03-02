@@ -15,4 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/{any}', function () {
     return view('spa.app')->with(['card' => "aaa", 'title' => "bbb", 'description' => "ccc"]);
-});
+    // return view('welcome');
+})->where('any', '.*');;
