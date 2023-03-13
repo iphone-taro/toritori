@@ -1,4 +1,13 @@
 @charset "UTF-8";
+.cTierText {
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  background-color: #74b9ff;
+  color: #2d3436;
+  white-space: nowrap;
+}
+
 .playBgCorrect {
   background-image: url(../img/gif/correct.gif);
 }
@@ -12,7 +21,7 @@
 }
 
 .bgColorBase {
-  background-color: #FFFADF;
+  background-color: #ffffff;
 }
 
 .bgColorMoku {
@@ -20,7 +29,7 @@
 }
 
 .bgColorLine {
-  background-color: #B096F3;
+  background-color: #000000;
 }
 
 .fc {
@@ -138,7 +147,7 @@ input::placeholder, textarea::placeholder {
 
 .link {
   cursor: pointer;
-  color: #B096F3;
+  color: #F39696;
 }
 
 .frame_red {
@@ -151,20 +160,18 @@ input::placeholder, textarea::placeholder {
 }
 
 .btnBase {
-  /* display: block; */
-  /* padding: 5px 10px 5px 10px; */
+  height: 32px;
+  padding: 7px 15px;
+  display: inline-block;
+  color: #636e72 !important;
   text-decoration: none;
-  color: #B096F3;
-  border-radius: 6px;
-  border: solid 2px #B096F3;
-  background-color: #fff;
-  padding: 5px 10px;
-  cursor: pointer;
-  box-shadow: 3px 3px 0px 0 rgba(0, 0, 0, 0.2) !important;
-}
-
-.btnBase > span {
-  margin: 20px 10px 20px 10px;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none !important;
+  background-color: #dfe6e9;
+  border: 2px solid #636e72;
 }
 
 .btnBase > p {
