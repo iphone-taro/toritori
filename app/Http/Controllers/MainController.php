@@ -49,7 +49,7 @@ class MainController extends Controller
             //データなし
             return response()->json(['status' => Consts::API_FAILED_NODATA, 'errMsg' => '']);
         }
-
+        
         //ティア用データ
         $itemList = DB::table('items')->where('category_id', $catId)->get();
         

@@ -1,3 +1,33 @@
+.bcStyleA {
+    background-color:black;
+}
+.bcStyleB {
+    background-color:white;
+}
+
+/* .bodyClass {
+    -ms-overflow-style: none;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+} */
+
+/* ::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: transparent;
+}
+.scroll_bar{
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+} */
+
 .tempScroll {
     overflow-y:scroll;
 }
@@ -210,6 +240,7 @@ a {
 .mainArea {
     width : 100%;
     margin: auto;
+    overflow-x: hidden;
 }
 
 .modalWidth-A{
@@ -229,16 +260,18 @@ a {
     .modalWidth-A{
         width:650px;
     }
-
-    .mainArea {
-        width : 720px
-    }
 }
 
 @media screen and (min-width : 992px) {
     /* .rootArea {
         width: 80%
     } */
+
+    .mainArea {
+        width : 960px;
+        margin:auto;
+        overflow-x: hidden;
+    }
 }
 
 @media screen and (min-width : 1400px) {
