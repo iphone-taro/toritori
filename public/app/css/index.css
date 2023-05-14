@@ -5,6 +5,10 @@
     background-color:white;
 }
 
+* {
+    font-family:kazesawa;
+}
+
 /* .bodyClass {
     -ms-overflow-style: none;
     overflow-y: scroll;
@@ -238,9 +242,14 @@ a {
 } */
 
 .mainArea {
-    width : 100%;
+    width : 95%;
     margin: auto;
     overflow-x: hidden;
+}
+
+.confirmArea {
+    width : 90%;
+    margin: auto;
 }
 
 .modalWidth-A{
@@ -250,9 +259,10 @@ a {
 .modalWidth-B {
     width: 95%;
 }
-@media screen and (min-width : 576px) {
-    .modalWidth-B {
+@media screen and (min-width : 500px) {
+    .confirmArea {
         width: 500px;
+        margin: auto;
     }
 }
 
@@ -262,13 +272,13 @@ a {
     }
 }
 
-@media screen and (min-width : 992px) {
+@media screen and (min-width : 1000px) {
     /* .rootArea {
         width: 80%
     } */
 
     .mainArea {
-        width : 960px;
+        width : 1000px;
         margin:auto;
         overflow-x: hidden;
     }
