@@ -92,6 +92,11 @@ body::-webkit-scrollbar {
     height : 30px;
 }
 
+.font_xxl {
+    font-size: 40px;
+    margin:0px
+}
+
 .font_xl {
     font-size: 30px;
     margin:0px
