@@ -17,6 +17,8 @@ use App\Http\Controllers\MainController;
 Route::get('/api/getCategoryList', [MainController::class, 'getCategoryList']);
 Route::post('/api/getItemData', [MainController::class, 'getItemData']);
 
+Route::get('/api/getAbs', [MainController::class, 'getAbs']);
+
 Route::get('/{any}', function () {
     return view('spa.app')->with(['card' => "aaa", 'title' => "bbb", 'description' => "ccc"]);
     // return view('welcome');

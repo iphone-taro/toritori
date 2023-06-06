@@ -19,6 +19,16 @@ use Abraham\TwitterOAuth\TwitterOAuth;
 class MainController extends Controller
 {
     //
+    //広告情報取得
+    //
+    public function getAbs(): JsonResponse {
+        $json = file_get_contents("../resources/abs.json");
+        $json = mb_convert_encoding($json, 'UTF8', 'ASCII,JIS,UTF-8,EUC-JP,SJIS-WIN');
+        $arr = json_decode($json,true);
+        return response()->json(['abs' => $arr]);
+    }
+
+    //
     // カテゴリー一覧取得
     //
     public function getCategoryList(): JsonResponse {
